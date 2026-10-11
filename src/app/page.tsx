@@ -47,7 +47,7 @@ export default function Home() {
 
       <div className="grid w-full max-w-5xl overflow-hidden rounded-[2rem] bg-white shadow-[0_30px_80px_-20px_rgba(6,27,61,0.55)] ring-1 ring-white/70 lg:grid-cols-[1.05fr_1fr]">
         {/* ───────────── Hero panel ───────────── */}
-        <aside className="relative isolate overflow-hidden bg-navy px-7 pb-12 pt-10 text-white sm:px-10 sm:pt-12 lg:px-12 lg:py-16">
+        <aside className="relative isolate min-w-0 overflow-hidden bg-navy px-5 pb-12 pt-10 text-white sm:px-10 sm:pt-12 lg:px-12 lg:py-16">
           {/* glows */}
           <div
             aria-hidden="true"
@@ -80,11 +80,11 @@ export default function Home() {
               Join us on
             </span>
 
-            <h1 className="mt-6 text-balance font-black uppercase leading-[0.92] tracking-tight">
-              <span className="block text-[2.6rem] sm:text-6xl lg:text-[2.75rem] xl:text-5xl">
+            <h1 className="mt-6 font-black uppercase leading-[0.95] tracking-tight">
+              <span className="block text-[clamp(1.7rem,8.4vw,2.6rem)] sm:text-5xl lg:text-[2.75rem] xl:text-5xl">
                 Australia
               </span>
-              <span className="block text-[2.6rem] sm:text-6xl lg:text-[2.75rem] xl:text-5xl">
+              <span className="block text-[clamp(1.7rem,8.4vw,2.6rem)] sm:text-5xl lg:text-[2.75rem] xl:text-5xl">
                 Fundraising
               </span>
             </h1>
