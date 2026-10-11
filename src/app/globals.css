@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Poster palette */
+  --color-navy: #0b2a5b;
+  --color-navy-light: #163a78;
+  --color-navy-dark: #061b3d;
+  --color-brand-red: #d7202e;
+  --color-brand-red-dark: #b4161f;
+  --color-sky: #2ea7dc;
+  --color-sky-light: #bfe4f7;
+  --color-sand: #f3dfb5;
+
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-great-vibes), cursive;
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-twinkle: twinkle 3.5s ease-in-out infinite;
+  --animate-shine: shine 2.8s linear infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.18);
+    }
+  }
+  @keyframes shine {
+    0% {
+      transform: translateX(-120%) skewX(-18deg);
+    }
+    100% {
+      transform: translateX(240%) skewX(-18deg);
+    }
+  }
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: #bfe4f7;
+  color: #0b2a5b;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Native <select> popup styling (where the browser allows it) */
+select option,
+select optgroup {
+  color: #0b2a5b;
+  background: #ffffff;
+  font-weight: 500;
+}
+select optgroup {
+  font-weight: 700;
+}
