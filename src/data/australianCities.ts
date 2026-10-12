@@ -5,18 +5,6 @@ export type CityGroup = {
 
 export const australianCities: CityGroup[] = [
   {
-    state: "New South Wales",
-    cities: ["Sydney", "Newcastle"],
-  },
-  {
-    state: "Victoria",
-    cities: ["Melbourne"],
-  },
-  {
-    state: "Queensland",
-    cities: ["Brisbane"],
-  },
-  {
     state: "Western Australia",
     cities: ["Perth"],
   },
